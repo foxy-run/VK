@@ -2,7 +2,16 @@ package ru.netology.domain;
 
 public class LikesInfo {
     private int count;
-    String authorLike;
+    private String idAuthorLike;
+    private int userLike;
+
+    public int getUserLike() {
+        return userLike;
+    }
+
+    public void setUserLike(int userLike) {
+        this.userLike = userLike;
+    }
 
     public int getCount() {
         return count;
@@ -12,11 +21,11 @@ public class LikesInfo {
         this.count = count;
     }
 
-    public String getAuthorLike() {
-        return authorLike;
+    public String getIdAuthorLike() {
+        return idAuthorLike;
     }
 
-    public void setAuthorLike(String authorLike) {
-        this.authorLike = authorLike;
+    public void setIdAuthorLike(String idAuthorLike) {
+        this.idAuthorLike = idAuthorLike;
     }
 }

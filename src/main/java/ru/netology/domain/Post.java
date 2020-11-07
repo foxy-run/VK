@@ -3,12 +3,21 @@ package ru.netology.domain;
 public class Post {
     private int id;
     private DateInfo dateInfo;
-    private String author;
+    private int authorID;
     private BodyInfo bodyInfo;
     private LikesInfo likesInfo;
     private ViewsInfo viewInfo;
     private RepostsInfo repostsInfo;
     private CommentsInfo commentsInfo;
+    private boolean friendsOnly;
+
+    public boolean isFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
 
     public DateInfo getDateInfo() {
         return dateInfo;
@@ -26,14 +35,13 @@ public class Post {
         this.id = id;
     }
 
-    public String getAuthor() {
-        return author;
+    public int getAuthorID() {
+        return authorID;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthorID(int authorID) {
+        this.authorID = authorID;
     }
-
 
     public BodyInfo getBodyInfo() {
         return bodyInfo;
